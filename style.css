@@ -1,0 +1,570 @@
+*,
+body,html{
+    box-sizing: border-box
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ 
+        margin-top:0;
+    }
+}
+
+.dropdown-menu{
+    left: -100;
+}
+.dropdown-item{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+#nav1 ul li a:hover{
+    color: rgb(0, 191, 165);
+}
+.navbar .nav-item ul li a:hover{
+    color: rgb(0, 191, 165);
+}
+.navflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navbar-default{
+    position: fixed;
+    width: 100%;
+    border: none;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    border-radius: 0;
+    background: white;
+    z-index: 999;
+}
+a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+#nav1{
+    padding-top: 1%;
+}
+.navbar-header{
+    flex: 50%;
+    display: flex;
+    align-items: center
+}
+.logo{
+    width: 30%;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+.flex2{
+    margin: 0 auto;
+    padding-top: 7.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.h1{
+    margin: 0 auto;
+    margin-top: 5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: rgb(0, 191, 165);
+}
+
+.grid{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+}
+.text1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: rgb(90, 90, 90);
+}
+
+.text2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: rgb(90, 90, 90);
+
+}
+
+div::selection {
+    color: rgb(255, 255, 255);
+    background:rgb(0, 191, 165);
+}
+
+.marginbot{
+    margin-bottom: 3%;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: minmax(100px,1fr) minmax(100px,1fr) minmax(100px,1fr);
+    column-gap: 1em;
+    margin: 0 auto;
+}
+.card3{
+    background:rgb(0, 29, 66);
+    border-radius: 15px;
+    padding: 20px;
+}
+.card3:hover{
+    background:rgb(8, 39, 80);
+}
+
+.card2{
+    background:rgb(86, 159, 255);
+    border-radius: 15px;
+    padding: 25px;
+}
+.card2:hover{
+    background:rgb(104, 170, 255);
+}
+.card1{
+    background:rgb(0, 191, 165);
+    border-radius: 15px;
+    padding: 20px;
+}
+.card1:hover{
+    background:rgb(12, 189, 165);
+}
+span{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 4rem;
+}
+.icon{
+    width: 20%;
+}
+.patient{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2.9rem;
+    margin-bottom: 20%;
+}
+
+.patient3{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2.9rem;
+    margin-bottom: 10%;
+}
+.patient span::selection{
+    color: white;
+    background:rgb(0, 126, 109);
+
+}
+.sec{
+    background: transparent;
+    border: 1px rgb(0, 191, 165);
+    outline:0px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2.7rem;
+    text-decoration: underline;
+}
+option{
+    color: black;
+    font-size: 14px;
+}
+.sec {
+    -webkit-appearance: button ;
+    border-radius: 2px;
+    -webkit-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    background: transparent;
+    background-position: center right;
+    background-repeat: no-repeat;
+    border: 0px solid #AAA;
+    color: white;
+    font-size: inherit;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: transparent;
+    border: 1px rgb(0, 191, 165);
+    outline:0px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2.7rem;
+    text-decoration: underline;
+}
+
+.margintop{
+    margin-top: 5%;
+}
+.grid3{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 1em;
+    align-items: center;
+}
+.images{
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    align-items: center;
+}
+.spon{
+    color: rgb(0, 191, 165);
+    font-size: 2.5em;
+    font-weight: 400;
+    max-width: 75%;
+}
+
+.images a{
+    filter: saturate(0);
+}
+.images a:hover{
+    filter: saturate(1);
+}
+
+.etoile{
+    height: 700px;
+    background-image: linear-gradient(-45deg,rgba(0, 204, 177, 0.01) 5%,rgba(61,199,223,.1));
+    padding-top: 5%;
+    z-index: 2;
+}
+
+.star{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.title{
+    color: rgb(0, 191, 165);
+    font-size: clamp(2rem,1vw,4rem);
+}
+
+.title2{
+    color: rgb(0, 191, 165);
+    font-size: clamp(1.5rem,1vw,2.5rem);
+}
+.item-1{
+    
+    width: 100%;
+    margin-right: 5%;
+    font-size: 2rem;
+    
+}
+
+.item-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    text-align: center;
+}
+.bloc{
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 85%;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vw;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 5%);
+    overflow:auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-size: clamp(1.4rem,1vw,2.5rem);
+}
+
+.item2{
+    position: relative;
+    top: -40px;
+}
+
+*::selection{
+    color: white;
+    background:rgb(0, 126, 109);
+
+}
+
+.life{
+    padding-top: 5%;
+    z-index: 5;
+}
+
+.bio{
+    margin: 0 auto;
+    text-align: center;
+    font-size: clamp(1rem,1vw,1.5rem);
+    max-width: 30%;
+}
+
+.row{
+    gap: 75px;
+    margin: 0 auto;
+    
+}
+
+.place{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.col-3{
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,.03);
+    padding: 0;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    overflow:auto;
+    float: left;
+    width: 30%;
+    margin-right: 10;
+    cursor: pointer;
+}
+.col-3:hover{
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 10%);
+    
+}
+
+p{
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.auto {
+    align-self: flex-start;
+    justify-self: flex-start;
+}
+
+.columne{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.sound{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2.7rem;
+    margin-bottom: 2%;
+}
+
+.footer{
+    line-height: 175%;
+}
+
+.footer1{
+    margin-top: 5%;
+    border-top: 1px solid #eef2f2;
+}
+
+.chtar{
+    width: 50%;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+}
+
+.cc{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+
+@media screen and (max-width:450px) {
+    
+    .hidee{
+        display: none;
+    }
+    .navbar-collapse{
+       font-size: 2rem;
+       width: 100%;
+    }
+    .container>.navbar-collapse{
+        margin: 0 0;
+    }
+    .navbar-default{
+        position: relative;
+    }
+    .logo{
+        width: 80%;
+    }
+    body{
+        background: rgb(255, 255, 255);
+    }
+    .navflex{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .navflex{
+        min-height: 80px;
+    }
+    .grid{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .grid2{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .icon{
+        width: 10%;
+    }
+    .patient{
+        font-size: 2rem;
+        margin-bottom: 10%;
+    }
+    .patient3{
+        font-size: 2rem;
+        margin-bottom: 10%;
+    }
+    span{
+        font-size: 2.5rem
+    }
+    .grid3{
+        display: flex;
+        flex-direction: column;
+    }
+    .spon{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .images{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .images a {
+        width: 30%;
+    }
+    .flex2{
+        text-align: center;
+    }
+    .star{
+        display: flex;
+        flex-direction: column;
+    }
+    .item-1{
+        margin-bottom: 10%;
+        text-align: center;
+    }
+    .bloc{
+        height: auto;
+        padding: 10px;
+        height: 80vw;
+        max-width: 93%;
+    }
+    .con2{
+        margin-bottom: 5%;
+    }
+    .etoile{
+        height: auto;
+    }
+    .bio{
+        max-width: 80%;
+        font-size: 1.5rem;
+    }
+    .col-3{
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+    .destinations{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+    .sound{
+        text-align: center;
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    .swiper {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+    
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+    
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+}
+
+
+
+
+
